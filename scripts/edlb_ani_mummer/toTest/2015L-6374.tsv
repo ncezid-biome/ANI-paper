@@ -1,0 +1,22 @@
+query	reference	percent-aligned	ANI	genus	species	subspecies	serotype
+2015L-6374.fa	SRR1184683.fasta	3.33	83.96	Listeria	grandensis		
+2015L-6374.fa	SRR1185116.fasta	3.30	84.04	Listeria	rocourtiae		
+2015L-6374.fa	SRR1184212.fasta	3.03	84.06	Listeria	aquatica		
+2015L-6374.fa	LU2006-1.fasta	3.99	84.34	Listeria	fleishmanii		
+2015L-6374.fa	SRR1184577.fasta	3.22	84.35	Listeria	cornellensis		
+2015L-6374.fa	SRR1185118.fasta	3.25	84.53	Listeria	weihenstephanensis		
+2015L-6374.fa	SRR1184556.fasta	2.98	84.54	Listeria	floridensis		
+2015L-6374.fa	SRR1185104.fasta	3.45	84.68	Listeria	riparia		
+2015L-6374.fa	F4081.fasta	63.92	84.93	Listeria	ivanovii		
+2015L-6374.fa	F5761.fasta	64.67	85.05	Listeria	seeligeri		
+2015L-6374.fa	F4076.fasta	2.92	85.21	Listeria	murrayi		
+2015L-6374.fa	SRR1185119.fasta	2.91	85.26	Listeria	grayi		
+2015L-6374.fa	F4082.fasta	76.86	87.38	Listeria	welshimeri		
+2015L-6374.fa	H0996.fasta	87.18	88.74	Listeria	innocua		
+2015L-6374.fa	2012L-5524.fasta	87.68	89.61	Listeria	marthii		
+2015L-6374.fa	2013L-5369.fasta	90.59	93.26	Listeria	monocytogenes	II	1/2c
+2015L-6374.fa	2013L-5409.fasta	91.32	93.62	Listeria	monocytogenes	II	1/2a
+2015L-6374.fa	2013L-5347.fasta	90.79	94.71	Listeria	monocytogenes	I	1/2b
+2015L-6374.fa	2014L-6438.fasta	91.49	94.73	Listeria	monocytogenes	I	4b
+2015L-6374.fa	F6214.fasta	91.45	95.26	Listeria	monocytogenes	IV	4
+2015L-6374.fa	2013L-5061.fasta	93.61	97.83	Listeria	monocytogenes	III	4b

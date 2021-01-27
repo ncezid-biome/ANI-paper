@@ -1,0 +1,56 @@
+/usr/local/sge/default/spool/qmaster/execd/node45/job_scripts/865913: line 24: /scicomp/home/gzu2/src/edlb_ani_mummer/executables/setenv.sh: No such file or directory
+Found dnadiff at /apps/x86_64/MUMmer/MUMmer3.23/dnadiff
+Uncompressing q.fasta.gz => /tmp/865913.1.highmem.q/q.fasta
+1% Reading info table reference/species.tsv
+3% Initializing multithreading. Number of reference genomes per thread: 21. Number of threads with reference genomes: 1
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/SRR1185118.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/SRR1185116.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/SRR1185104.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/F4082.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/SRR1185119.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/2013L-5347.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/2013L-5409.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/SRR1184577.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/2014L-6438.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/F5761.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/2013L-5061.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/H0996.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/F6214.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/2012L-5524.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/SRR1184556.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/LU2006-1.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/2013L-5369.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/F4081.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/SRR1184683.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/SRR1184212.fasta (thread1)
+Running /tmp/865913.1.highmem.q/q.fasta vs reference/F4076.fasta (thread1)
+99% Joined 1 threads
+100% Done with ANI vs 21 reference genomes
+/usr/local/sge/default/spool/qmaster/execd/node45/job_scripts/866047: line 24: /scicomp/home/gzu2/src/edlb_ani_mummer/executables/setenv.sh: No such file or directory
+Found dnadiff at /apps/x86_64/MUMmer/MUMmer3.23/dnadiff
+Uncompressing q.fasta.gz => /tmp/866047.1.highmem.q/q.fasta
+1% Reading info table reference/species.tsv
+3% Initializing multithreading. Number of reference genomes per thread: 21. Number of threads with reference genomes: 1
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/SRR1185118.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/SRR1185116.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/SRR1185104.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/F4082.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/SRR1185119.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/2013L-5347.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/2013L-5409.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/SRR1184577.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/2014L-6438.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/F5761.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/2013L-5061.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/H0996.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/F6214.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/2012L-5524.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/SRR1184556.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/LU2006-1.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/2013L-5369.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/F4081.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/SRR1184683.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/SRR1184212.fasta (thread1)
+Running /tmp/866047.1.highmem.q/q.fasta vs reference/F4076.fasta (thread1)
+99% Joined 1 threads
+100% Done with ANI vs 21 reference genomes

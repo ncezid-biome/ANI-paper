@@ -1,0 +1,147 @@
+query	reference	percent-aligned	ANI	genus	species	subspecies	serotype
+1000000.fasta	SRR1185118.fasta	2.72	83.23	Listeria	weihenstephanensis		
+1000000.fasta	2014L-6256.fasta	84.65	92.64	Listeria	monocytogenes	IV	
+1000000.fasta	G4599.fasta	93.94	94.80	Listeria	monocytogenes	I	
+1000000.fasta	SLCC5334.fasta	76.40	87.31	Listeria	welshimeri		
+1000000.fasta	SRR1185116.fasta	2.29	83.12	Listeria	rocourtiae		
+1000000.fasta	SRR1185104.fasta	2.70	84.19	Listeria	riparia		
+1000000.fasta	2010L-2059.fasta	82.85	88.50	Listeria	innocua		
+1000000.fasta	SRR1185119.fasta	2.17	83.88	Listeria	grayi		
+1000000.fasta	2014L-6393.fasta	85.12	93.19	Listeria	monocytogenes	III	
+1000000.fasta	PAM55.fasta	63.55	84.70	Listeria	ivanovii		
+1000000.fasta	J0099.fasta	89.31	93.54	Listeria	monocytogenes	III	
+1000000.fasta	SRR1184577.fasta	2.27	83.44	Listeria	cornellensis		
+1000000.fasta	2011L-2626.fasta	100.00	100.00	Listeria	monocytogenes	II	
+1000000.fasta	F5761.fasta	64.71	84.98	Listeria	seeligeri		
+1000000.fasta	H0996.fasta	83.29	88.67	Listeria	innocua		
+1000000.fasta	2012L-5524.fasta	81.79	90.11	Listeria	marthii		
+1000000.fasta	SRR1184556.fasta	1.93	83.29	Listeria	floridensis		
+1000000.fasta	LU2006-1.fasta	3.46	82.95	Listeria	fleishmanii		
+1000000.fasta	SRR1184683.fasta	2.37	83.00	Listeria	grandensis		
+1000000.fasta	SRR1184212.fasta	1.89	82.64	Listeria	aquatica		
+query	reference	percent-aligned	ANI	genus	species	subspecies	serotype
+100000.fasta	SRR1185118.fasta	3.39	84.36	Listeria	weihenstephanensis		
+100000.fasta	2014L-6256.fasta	85.93	92.71	Listeria	monocytogenes	IV	
+100000.fasta	G4599.fasta	94.65	94.87	Listeria	monocytogenes	I	
+100000.fasta	SLCC5334.fasta	77.27	87.49	Listeria	welshimeri		
+100000.fasta	SRR1185116.fasta	2.97	84.37	Listeria	rocourtiae		
+100000.fasta	SRR1185104.fasta	3.49	84.97	Listeria	riparia		
+100000.fasta	2010L-2059.fasta	84.96	88.61	Listeria	innocua		
+100000.fasta	SRR1185119.fasta	2.81	85.32	Listeria	grayi		
+100000.fasta	2014L-6393.fasta	86.95	93.29	Listeria	monocytogenes	III	
+100000.fasta	PAM55.fasta	65.20	84.94	Listeria	ivanovii		
+100000.fasta	J0099.fasta	91.60	93.57	Listeria	monocytogenes	III	
+100000.fasta	SRR1184577.fasta	3.03	84.55	Listeria	cornellensis		
+100000.fasta	2011L-2626.fasta	100.00	100.00	Listeria	monocytogenes	II	
+100000.fasta	F5761.fasta	66.64	85.14	Listeria	seeligeri		
+100000.fasta	H0996.fasta	84.44	88.71	Listeria	innocua		
+100000.fasta	2012L-5524.fasta	83.77	90.13	Listeria	marthii		
+100000.fasta	SRR1184556.fasta	2.65	84.83	Listeria	floridensis		
+100000.fasta	LU2006-1.fasta	4.16	84.37	Listeria	fleishmanii		
+100000.fasta	SRR1184683.fasta	2.94	84.43	Listeria	grandensis		
+100000.fasta	SRR1184212.fasta	2.76	84.29	Listeria	aquatica		
+query	reference	percent-aligned	ANI	genus	species	subspecies	serotype
+10000.fasta	SRR1185118.fasta	3.21	84.41	Listeria	weihenstephanensis		
+10000.fasta	2014L-6256.fasta	85.70	92.74	Listeria	monocytogenes	IV	
+10000.fasta	G4599.fasta	94.57	94.88	Listeria	monocytogenes	I	
+10000.fasta	SLCC5334.fasta	76.00	87.59	Listeria	welshimeri		
+10000.fasta	SRR1185116.fasta	2.74	84.60	Listeria	rocourtiae		
+10000.fasta	SRR1185104.fasta	3.24	85.25	Listeria	riparia		
+10000.fasta	2010L-2059.fasta	84.37	88.74	Listeria	innocua		
+10000.fasta	SRR1185119.fasta	2.70	85.31	Listeria	grayi		
+10000.fasta	2014L-6393.fasta	86.92	93.34	Listeria	monocytogenes	III	
+10000.fasta	PAM55.fasta	63.25	85.04	Listeria	ivanovii		
+10000.fasta	J0099.fasta	91.66	93.62	Listeria	monocytogenes	III	
+10000.fasta	SRR1184577.fasta	2.76	84.77	Listeria	cornellensis		
+10000.fasta	2011L-2626.fasta	100.00	100.00	Listeria	monocytogenes	II	
+10000.fasta	F5761.fasta	64.08	85.26	Listeria	seeligeri		
+10000.fasta	H0996.fasta	83.85	88.83	Listeria	innocua		
+10000.fasta	2012L-5524.fasta	83.36	90.17	Listeria	marthii		
+10000.fasta	SRR1184556.fasta	2.54	84.91	Listeria	floridensis		
+10000.fasta	LU2006-1.fasta	3.93	84.51	Listeria	fleishmanii		
+10000.fasta	SRR1184683.fasta	2.76	84.54	Listeria	grandensis		
+10000.fasta	SRR1184212.fasta	2.59	84.44	Listeria	aquatica		
+query	reference	percent-aligned	ANI	genus	species	subspecies	serotype
+1000.fasta	SRR1185118.fasta	2.35	85.82	Listeria	weihenstephanensis		
+1000.fasta	2014L-6256.fasta	84.27	92.95	Listeria	monocytogenes	IV	
+1000.fasta	G4599.fasta	93.74	95.04	Listeria	monocytogenes	I	
+1000.fasta	SLCC5334.fasta	63.33	88.68	Listeria	welshimeri		
+1000.fasta	SRR1185116.fasta	1.97	86.00	Listeria	rocourtiae		
+1000.fasta	SRR1185104.fasta	2.62	86.40	Listeria	riparia		
+1000.fasta	2010L-2059.fasta	72.91	89.82	Listeria	innocua		
+1000.fasta	SRR1185119.fasta	2.17	86.56	Listeria	grayi		
+1000.fasta	2014L-6393.fasta	85.22	93.59	Listeria	monocytogenes	III	
+1000.fasta	PAM55.fasta	42.20	86.82	Listeria	ivanovii		
+1000.fasta	J0099.fasta	90.21	93.86	Listeria	monocytogenes	III	
+1000.fasta	SRR1184577.fasta	2.13	85.94	Listeria	cornellensis		
+1000.fasta	2011L-2626.fasta	100.00	99.99	Listeria	monocytogenes	II	
+1000.fasta	F5761.fasta	44.22	86.90	Listeria	seeligeri		
+1000.fasta	H0996.fasta	72.62	89.92	Listeria	innocua		
+1000.fasta	2012L-5524.fasta	77.63	90.76	Listeria	marthii		
+1000.fasta	SRR1184556.fasta	1.87	86.56	Listeria	floridensis		
+1000.fasta	LU2006-1.fasta	2.92	85.68	Listeria	fleishmanii		
+1000.fasta	SRR1184683.fasta	2.10	85.76	Listeria	grandensis		
+1000.fasta	SRR1184212.fasta	1.86	85.68	Listeria	aquatica		
+query	reference	percent-aligned	ANI	genus	species	subspecies	serotype
+100.fasta	SRR1185118.fasta	0.29	96.88	Listeria	weihenstephanensis		
+100.fasta	2014L-6256.fasta	33.72	97.14	Listeria	monocytogenes	IV	
+100.fasta	G4599.fasta	56.80	97.67	Listeria	monocytogenes	I	
+100.fasta	SLCC5334.fasta	10.74	96.84	Listeria	welshimeri		
+100.fasta	SRR1185116.fasta	0.27	97.02	Listeria	rocourtiae		
+100.fasta	SRR1185104.fasta	0.42	97.64	Listeria	riparia		
+100.fasta	2010L-2059.fasta	18.17	97.06	Listeria	innocua		
+100.fasta	SRR1185119.fasta	0.30	97.00	Listeria	grayi		
+100.fasta	2014L-6393.fasta	40.37	97.51	Listeria	monocytogenes	III	
+100.fasta	PAM55.fasta	5.35	96.76	Listeria	ivanovii		
+100.fasta	J0099.fasta	44.72	97.67	Listeria	monocytogenes	III	
+100.fasta	SRR1184577.fasta	0.30	96.75	Listeria	cornellensis		
+100.fasta	2011L-2626.fasta	99.99	100.00	Listeria	monocytogenes	II	
+100.fasta	F5761.fasta	5.93	96.82	Listeria	seeligeri		
+100.fasta	H0996.fasta	18.31	97.10	Listeria	innocua		
+100.fasta	2012L-5524.fasta	22.31	97.33	Listeria	marthii		
+100.fasta	SRR1184556.fasta	0.25	97.20	Listeria	floridensis		
+100.fasta	LU2006-1.fasta	0.31	96.81	Listeria	fleishmanii		
+100.fasta	SRR1184683.fasta	0.30	96.84	Listeria	grandensis		
+100.fasta	SRR1184212.fasta	0.23	96.87	Listeria	aquatica		
+query	reference	percent-aligned	ANI	genus	species	subspecies	serotype
+10.fasta	SRR1185118.fasta	0.00	0.00	Listeria	weihenstephanensis		
+10.fasta	2014L-6256.fasta	0.00	0.00	Listeria	monocytogenes	IV	
+10.fasta	G4599.fasta	0.00	0.00	Listeria	monocytogenes	I	
+10.fasta	SLCC5334.fasta	0.00	0.00	Listeria	welshimeri		
+10.fasta	SRR1185116.fasta	0.00	0.00	Listeria	rocourtiae		
+10.fasta	SRR1185104.fasta	0.00	0.00	Listeria	riparia		
+10.fasta	2010L-2059.fasta	0.00	0.00	Listeria	innocua		
+10.fasta	SRR1185119.fasta	0.00	0.00	Listeria	grayi		
+10.fasta	2014L-6393.fasta	0.00	0.00	Listeria	monocytogenes	III	
+10.fasta	PAM55.fasta	0.00	0.00	Listeria	ivanovii		
+10.fasta	J0099.fasta	0.00	0.00	Listeria	monocytogenes	III	
+10.fasta	SRR1184577.fasta	0.00	0.00	Listeria	cornellensis		
+10.fasta	2011L-2626.fasta	0.00	0.00	Listeria	monocytogenes	II	
+10.fasta	F5761.fasta	0.00	0.00	Listeria	seeligeri		
+10.fasta	H0996.fasta	0.00	0.00	Listeria	innocua		
+10.fasta	2012L-5524.fasta	0.00	0.00	Listeria	marthii		
+10.fasta	SRR1184556.fasta	0.00	0.00	Listeria	floridensis		
+10.fasta	LU2006-1.fasta	0.00	0.00	Listeria	fleishmanii		
+10.fasta	SRR1184683.fasta	0.00	0.00	Listeria	grandensis		
+10.fasta	SRR1184212.fasta	0.00	0.00	Listeria	aquatica		
+query	reference	percent-aligned	ANI	genus	species	subspecies	serotype
+2011L-2626.fasta	SRR1185118.fasta	3.40	84.25	Listeria	weihenstephanensis		
+2011L-2626.fasta	2014L-6256.fasta	85.73	92.73	Listeria	monocytogenes	IV	
+2011L-2626.fasta	G4599.fasta	94.61	94.88	Listeria	monocytogenes	I	
+2011L-2626.fasta	SLCC5334.fasta	76.81	87.51	Listeria	welshimeri		
+2011L-2626.fasta	SRR1185116.fasta	2.92	84.37	Listeria	rocourtiae		
+2011L-2626.fasta	SRR1185104.fasta	3.42	84.98	Listeria	riparia		
+2011L-2626.fasta	2010L-2059.fasta	84.88	88.68	Listeria	innocua		
+2011L-2626.fasta	SRR1185119.fasta	2.81	85.22	Listeria	grayi		
+2011L-2626.fasta	2014L-6393.fasta	87.10	93.31	Listeria	monocytogenes	III	
+2011L-2626.fasta	PAM55.fasta	64.98	84.92	Listeria	ivanovii		
+2011L-2626.fasta	J0099.fasta	91.81	93.61	Listeria	monocytogenes	III	
+2011L-2626.fasta	SRR1184577.fasta	3.02	84.46	Listeria	cornellensis		
+2011L-2626.fasta	2011L-2626.fasta	100.00	100.00	Listeria	monocytogenes	II	
+2011L-2626.fasta	F5761.fasta	66.11	85.12	Listeria	seeligeri		
+2011L-2626.fasta	H0996.fasta	84.48	88.78	Listeria	innocua		
+2011L-2626.fasta	2012L-5524.fasta	83.60	90.13	Listeria	marthii		
+2011L-2626.fasta	SRR1184556.fasta	2.59	84.86	Listeria	floridensis		
+2011L-2626.fasta	LU2006-1.fasta	4.09	84.35	Listeria	fleishmanii		
+2011L-2626.fasta	SRR1184683.fasta	2.91	84.40	Listeria	grandensis		
+2011L-2626.fasta	SRR1184212.fasta	2.72	84.30	Listeria	aquatica		
