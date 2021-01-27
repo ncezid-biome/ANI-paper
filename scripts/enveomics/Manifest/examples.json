@@ -1,0 +1,154 @@
+{
+  "_": "Input files and directories are included in the 'Tests' folder.",
+  "examples": [
+    {
+      "_": "== Examples of genome comparisons ==",
+      "task": "ogs.stats.rb",
+      "description": ["Statistics on the groups of orthology in the Primate",
+        "Lentivirus Group, including HIV-1, HIV-2, and SIV."],
+      "values": ["primate_lentivirus.ogs",null,null,null,null,null]
+    },
+    {
+      "task": "ani.rb",
+      "description": ["Average Nucleotide Identity (ANI) between two strains",
+        "of Mycoplasma genitalium (M2288 and M2321)."],
+      "values": ["Mgen_M2288.fna","Mgen_M2321.fna",null,null,null,null,null,
+        null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+        null,null,null]
+    },
+    {
+      "task": "aai.rb",
+      "description": ["Average Amino acid Identity (AAI) between Mycoplasma",
+        "genitalium (Bacteria) and Nanoarchaeum equitans (Archaea)."],
+      "values": ["Mgen_M2288.faa","Nequ_Kin4M.faa",null,null,null,null,null,
+        null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+        null,null,null]
+    },
+    {
+      "task": "rbm.rb",
+      "description": ["Reciprocal Best Matches between the proteomes of the",
+        "two major HIV types (HIV-1 and HIV-2)."],
+      "values": ["hiv1.faa","hiv2.faa",null,null,null,null,null,null,null,null,
+        null,null,"hiv1-hiv2.rbm"]
+    },
+    {
+      "task": "ogs.mcl.rb",
+      "description": ["Groups of orthology in the Primate Letivirus Group,",
+         "including HIV-1, HIV-2, and SIV."],
+      "values": ["primate_lentivirus.ogs","primate_lentivirus.rbm",null,null,
+        null,null,null,null,null,null,null,null]
+    },
+    {
+      "task": "Table.df2dist.R",
+      "description": ["Transforms a list of AAI values between Xanthomonas",
+        "oryzae genomes into a distance matrix."],
+      "values": ["Xanthomonas_oryzae.aai.tsv",null,null,null,null,100.0,
+        "Xanthomonas_oryzae.aai-mat.tsv"]
+    },
+    {
+      "_": "== Recruitment plots",
+      "task": "BlastTab.catsbj.pl",
+      "description": ["Prepares recruitment plot files for a comparison",
+        "between a virome containing HIV and the HIV-1 genome."],
+      "values": [null,null,null,null,"hiv1.fna","hiv_mix-hiv1.blast.tsv"]
+    },
+    {
+      "task": "BlastTab.recplot2.R",
+      "description": ["Generates recruitment plots for a comparison",
+        "between a virome containing HIV and the HIV-1 genome."],
+      "values": ["hiv_mix-hiv1.blast.tsv",50,100,null,null,null,null,null,
+        "hiv_mix-hiv1.Rdata","hiv_mix-hiv1.pdf",null,null]
+    },
+    {
+      "_": "== Examples of functional annotations ==",
+      "task": "HMM.essential.rb",
+      "description": ["Typical single-copy bacterial genes present in",
+        "Mycoplasma genitalium."],
+      "values": ["Mgen_M2288.faa",null,null,null,true,null,null,null,null,null,
+        null,null,null,null,null,null]
+    },
+    {
+      "task": "HMM.essential.rb",
+      "description": ["Typical single-copy archaeal genes present in",
+        "Nanoarchaeum equitans."],
+      "values": ["Mgen_M2288.faa",null,null,null,null,true,null,null,null,null,
+        null,null,null,null,null,null]
+    },
+    {
+      "task": "Newick.autoprune.R",
+      "description": ["Prune an AlkB tree with 110 tips to get only distant",
+        "representatives (41)."],
+      "values": ["alkB.nwk",0.9,null,null,null,null,null,"alkB-pruned.nwk"]
+    },
+    {
+      "_": "== Examples of BLAST statistics and manipulation",
+      "task": "BlastTab.topHits_sorted.rb",
+      "description": ["Extract the best match of metagenome-derived proteins",
+        "(from the 'A metagenome') against a Gene Ontology collection."],
+      "values": ["sort","a_mg.cds-go.blast.tsv",null,null,null,null,1,null,null,
+        null,"a_mg.cds-go.blast-bm.tsv"]
+    },
+    {
+      "task": "BlastTab.sumPerHit.pl",
+      "description": ["Count the number of reads per gene in a mapping of a",
+        "metagenome to a metagenome-derived genes (from the 'A metagenome')."],
+      "values": [null,null,null,null,null,null,null,"a_mg.reads-cds.blast.tsv",
+        null,"a_mg.reads-cds.counts.tsv"]
+    },
+    {
+      "task": "BlastTab.sumPerHit.pl",
+      "description": ["Estimate the total abundance of Gene Ontology",
+        "annotations in the A metagenome, using metagenome-derived proteins,",
+        "and normalizing by the read counts of each protein."],
+      "values": ["a_mg.reads-cds.counts.tsv",null,null,null,null,true,null,
+        "a_mg.cds-go.blast.tsv",null,"a_mg.go.read-counts.tsv"]
+    },
+    {
+      "_": "== Examples of diversity ==",
+      "task": "Table.barplot.R",
+      "description": ["Barplot with the distribution of bacterial phyla in",
+        "four different sites, with taxa sorted by variance."],
+      "values": ["phyla_counts.tsv","250,100,75,200",null,null,null,null,null,
+        null,true,"var",2,null,null,"phyla_counts.pdf",10,null]
+    },
+    {
+      "task": "Chao1.pl",
+      "description": ["Phylum-richness estimated by the Chao1 index with 95%",
+        "confidence, using the distributions of bacterial phyla in four",
+        "different sites."],
+      "values": ["phyla_counts.tsv",null,1,null,null,true,null,
+         "phyla_chao1.tsv"]
+    },
+    {
+      "task": "AlphaDiversity.pl",
+      "description": ["Phylum-diversity estimated by the indices of Shannon",
+        "(H'), Inverse Simpson (1/Lambda), and true diversity of order 1 (1D),",
+        "using the distributions of bacterial phyla in four different sites."],
+      "values": ["phyla_counts.tsv",null,1,null,null,true,null,true,1,null,
+         "phyla_diversity.tsv"]
+    },
+    {
+      "_": "== Other miscelaneous examples ==",
+      "task": "CharTable.classify.rb",
+      "description": ["Classification of anthrax genomes based on can-SNPs, as",
+        "described in Van Ert 2007 (PLoS ONE 2(5):e461)."],
+      "values": ["anthrax-cansnp-data.tsv","anthrax-cansnp-key.tsv",
+        "anthrax-cansnp-classif.tsv","anthrax-cansnp-classif.nwk",null]
+    },
+    {
+      "task": "TRIBS.test.R",
+      "description": ["Test overclustering of Xanthomonas oryzae genomes",
+        "encoding for PilA using Transformed-space Resampling In Biased Sets",
+        "(TRIBS)."],
+      "values": ["Xanthomonas_oryzae.aai-mat.tsv","Xanthomonas_oryzae-PilA.txt",
+        5000,null,null,null,null,0,"Xanthomonas_oryzae-PilA.tribs.Rdata",100]
+    },
+    {
+      "task": "TRIBS.plot-test.R",
+      "description": ["Show the TRIBS-normalized distances between Xanthomonas",
+        "oryzae genomes (grey) and X. oryzae encoding for PilA (red)."],
+      "values": ["Xanthomonas_oryzae-PilA.tribs.Rdata",null,null,null,null,null,
+        null,null,"Xanthomonas_oryzae-PilA.tribs.pdf",null,null]
+    }
+  ]
+}

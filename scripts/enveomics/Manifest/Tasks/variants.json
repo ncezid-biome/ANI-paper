@@ -1,0 +1,111 @@
+{
+  "tasks": [
+    {
+      "task": "VCF.SNPs.rb",
+      "description": ["Counts the number of Single-Nucleotide Polymorphisms",
+        "(SNPs) in a VCF file."],
+      "help_arg": "--help",
+      "options": [
+        {
+          "opt": "--input",
+          "arg": "in_file",
+          "mandatory": true,
+          "description": "Input file in Variant Call Format (VCF)."
+        },
+        {
+          "name": "Filtered VCF",
+          "opt": "--out",
+          "arg": "out_file",
+          "description": "Output (filtered) file in Variant Call Format (VCF)."
+        },
+        {
+          "name": "Min DP",
+          "opt": "--min-dp",
+          "arg": "integer",
+          "description": "Minimum number of reads covering the position.",
+          "default": 4
+        },
+        {
+          "name": "Max DP",
+          "opt": "--max-dp",
+          "arg": "integer",
+          "description": ["Maximum number of reads covering the position. By",
+            "default no limit."]
+        },
+        {
+          "name": "Min Ref-DP",
+          "opt": "--min-ref-dp",
+          "arg": "integer",
+          "description": "Minimum number of reads supporting the REF allele.",
+          "default": 2
+        },
+        {
+          "name": "Min Alt-DP",
+          "opt": "--min-alt-dp",
+          "arg": "integer",
+          "description": "Minimum number of reads supporting the ALT allele.",
+          "default": 2
+        },
+        {
+          "opt": "--min-quality",
+          "arg": "float",
+          "description": "Minimum quality of the position mapping.",
+          "default": 0.0
+        },
+        {
+          "opt": "--min-shannon",
+          "arg": "integer",
+          "description": "Minimum information content (in bits, from 0 to 1).",
+          "default": 0.0
+        },
+	{
+	  "opt": "--indels",
+	  "description": "Process indels."
+	}
+      ]
+    },
+    {
+      "task": "VCF.KaKs.rb",
+      "description": ["Estimates the Ka/Ks ratio from the SNPs in a VCF file.",
+        "Ka and Ks are corrected using pseudo-counts, but no corrections for",
+        "multiple substitutions are applied."],
+      "help_arg": "--help",
+      "see_also": ["VCF.SNPs.rb"],
+      "options": [
+        {
+          "opt": "--input",
+          "arg": "in_file",
+          "mandatory": true,
+          "description": "Input file in Variant Call Format (VCF)."
+        },
+        {
+          "opt": "--seqs",
+          "arg": "in_file",
+          "mandatory": true,
+          "description": "Input gene sequences (nucleotides) in FastA format."
+        },
+        {
+          "name": "Synonymous fraction",
+          "opt": "--syn-frx",
+          "arg": "float",
+          "description": ["Fraction of synonymous substitutions. If passed,",
+            "the number of sites are estimated (not counted per gene),",
+            "speeding up the computation ~10X."]
+        },
+        {
+          "name": "Bacterial code synonymous fraction",
+          "opt": "--syn-bacterial-code",
+          "description": ["Sets the synonymous fraction to 0.760417,",
+            "approximately the proportion of synonymous substitutions in the",
+            "bacterial code."]
+        },
+        {
+          "opt": "--codon-file",
+          "arg": "out_file",
+          "description": ["Output file including the codons of substitution",
+            "variants."]
+        }
+      ]
+    }
+  ]
+}

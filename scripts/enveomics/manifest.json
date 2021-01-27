@@ -1,0 +1,9 @@
+{
+  "_": ["This is not standard JSON, to parse use EnveJSON, available at:",
+    "https://github.com/lmrodriguezr/enveomics-gui/."],
+  "_include": [
+    "Manifest/categories.json",
+    "Manifest/examples.json",
+    "Manifest/tasks.json"
+  ]
+}
