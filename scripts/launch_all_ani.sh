@@ -30,7 +30,9 @@ which ani.rb
 which blastn
 # FastANI
 module purge
+module load gcc/9.2.0
 which fastANI
+fastANI --version # check that it runs at least --version
 
 out=$1; shift;
 if [ -e "$out" ]; then
@@ -46,6 +48,7 @@ CTRL_FILE="$tmpdir/fasta.txt"
 echo "$@" | tr ' ' '\n' | xargs -P 1 -n 1 realpath > $CTRL_FILE
 
 mkdir -p $tmpdir/log
+mkdir -p $tmpdir/ani.out
 
 qsub -q all.q -N ANI-all -o $tmpdir/log -j y -V -cwd -t 1-$(cat $CTRL_FILE | wc -l) \
   -v "CTRL_FILE=$CTRL_FILE" -v "tmpdir=$tmpdir" <<- "END_OF_SCRIPT"
@@ -54,15 +57,20 @@ qsub -q all.q -N ANI-all -o $tmpdir/log -j y -V -cwd -t 1-$(cat $CTRL_FILE | wc 
   ref=$(sed -n ${SGE_TASK_ID}p $CTRL_FILE | cut -f 1)
   query_counter=0
   for query in $(cat $CTRL_FILE); do 
+    echo "ref:   $ref"
+    echo "query: $query"
 
-    tmpsubdir=$(mktemp --tmpdir=$tmpdir --directory ani-all.XXXXXX)
-    trap "rm -rf $tmpsubdir;" EXIT
+    #tmpsubdir=$(mktemp --tmpdir=$tmpdir/ani.out --directory ani-all.XXXXXX)
+
+    pairwiseID="$SGE_TASK_ID.$query_counter"
+    tmpsubdir="$tmpdir/ani.out/$pairwiseID.out"
+    mkdir -pv $tmpsubdir
     touch $tmpsubdir/ani.tsv
     touch $tmpsubdir/time.tsv
 
     ## ANI-M
     module purge
-    module load MUMmer
+    module load MUMmer/3.9.4
     module unload perl
     module load perl/5.16.1-MT
     echo "Testing prereq software";
@@ -93,12 +101,10 @@ qsub -q all.q -N ANI-all -o $tmpdir/log -j y -V -cwd -t 1-$(cat $CTRL_FILE | wc 
       coverage=$(cut -f 2 $tmpsubdir/ani.tsv | tail -n 1);
       if [[ "$coverage" = "." || "$coverage" = "" ]]; then
         echo "Coverage was not reported. Discarding";
-        rm -rf $tmpsubdir
         continue;
       fi;
       if (( $(echo "$coverage < 70" | bc -l) )); then
         echo "Coverage was $coverage, < 70%. Discarding";
-        rm -rf $tmpsubdir
         continue;
       fi;
     fi
@@ -125,13 +131,19 @@ qsub -q all.q -N ANI-all -o $tmpdir/log -j y -V -cwd -t 1-$(cat $CTRL_FILE | wc 
 
     ## FastANI
     module purge
+    module load gcc/9.2.0
     which fastANI
     echo "FastANI"
     echo -ne "FastANI\t" >> $tmpsubdir/ani.tsv
     /usr/bin/time -o $tmpsubdir/time.tsv --append -f 'FastANI\t%e' \
       fastANI -q $query -r $ref -o $tmpsubdir/fastANI.tsv
-    percent_aligned=$(echo "$(cut -d ' ' -f 4 $tmpsubdir/fastANI.tsv) / $(cut -d ' ' -f 5 $tmpsubdir/fastANI.tsv)" | bc -l)
-    ani=$(cut -d ' ' -f 3 $tmpsubdir/fastANI.tsv)
+    percent_aligned=$(cat $tmpsubdir/fastANI.tsv | perl -lane '
+      $pa = $F[3] / $F[4];
+      print $pa;
+    ')
+    ani=$(cat $tmpsubdir/fastANI.tsv | perl -lane '
+      print $F[2];
+    ')
 
     if [ "$ani" == "" ]; then
       ani="0";
@@ -144,7 +156,6 @@ qsub -q all.q -N ANI-all -o $tmpdir/log -j y -V -cwd -t 1-$(cat $CTRL_FILE | wc 
 
     mv -v $tmpsubdir/ani.tsv $tmpdir/ani.$SGE_TASK_ID.$query_counter.tsv
     mv -v $tmpsubdir/time.tsv $tmpdir/time.$SGE_TASK_ID.$query_counter.tsv
-    rm -rfv $tmpsubdir
 
     query_counter=$(($query_counter + 1))
   done
@@ -186,5 +197,4 @@ END_OF_SCRIPT
 
 echo "Times will be found in $out"
 echo "ANI values will be found in $out.ani.tsv"
-
 
